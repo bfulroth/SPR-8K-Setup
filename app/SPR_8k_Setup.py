@@ -43,8 +43,8 @@ def spr_setup_sheet(args=None):
         if args.clip:
             df_setup_ori = pd.read_clipboard()
         else:
-            file = "Example_Files/Template; Compound Setup Table 8K Up to 32 Compunds 10 Point Dose.csv"
-            df_setup_ori = pd.read_csv(file)
+            file = "Example_Files/Template; Compound Setup Table 8K Up to 32 Compunds 10 Point Dose.xlsx"
+            df_setup_ori = pd.read_excel(file)
     except:
         raise ImportError("Issues reading contents of file.")
 
